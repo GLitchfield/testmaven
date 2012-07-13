@@ -13,8 +13,27 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <repositories>
+    <repository>
+        <id>com.twitter</id>
+        <url>http://maven.twttr.com</url>
+    </repository>
+  </repositories>
 
   <dependencies>
+
+	<dependency>
+        <groupId>com.twitter</groupId>
+  		<artifactId>finagle-core</artifactId>
+  		<version>5.3.0</version>
+    </dependency>  
+    
+    <dependency>
+        <groupId>com.twitter</groupId>
+		<artifactId>finagle-http</artifactId>
+		<version>5.3.0</version>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
@@ -43,7 +62,6 @@
       <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
-        <version>3.0.2</version>
       </plugin>
     </plugins>
   </build>
